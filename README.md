@@ -7,7 +7,7 @@ Summary statistics for genetic analysis on HSCR WGS (Tang et al. submitted), inc
 4. Annotation of 4985 protein-truncating ultra-rare variants
 
 ## 1. Common variant association analysis
-##    (n7224k.gwas_var-maf01.rvtests.MetaScore.SingleWald.chr*.assoc.gz)
+#### (n7224k.gwas_var-maf01.rvtests.MetaScore.SingleWald.chr*.assoc.gz)
 
 - Performed using [rvtests](https://github.com/zhanxw/rvtests)
 - Score test results using `--meta score,cov` that could be used for meta-analysis
