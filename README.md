@@ -18,28 +18,38 @@ Summary statistics for genetic analysis on HSCR WGS (Tang et al. submitted), inc
   - HWE_PVALUE: Hardy-Weinberg equilibrium p-values for controls. 
   - N_REF/N_HET/N_ALT: Number of samples carrying homozygous reference/heterozygous/homozygous alternative alleles. 
   - ALT_EFFSIZE: Estimated log odds-ratio for binary outcome. 
-  - PSCORE : Score test p-values
+  - PSCORE : Score test p-values.
 - Wald test results using `--single wald`
-  - PWALD : Wald test p-values
+  - PWALD : Wald test p-values.
   
 ## 2. Rare variant association analysis
-##    (n11898.RV-CMC-burdenTest.assoc)
+#### (n11898.RV-CMC-burdenTest.assoc)
 
 - Performed using [rvtests](https://github.com/zhanxw/rvtests)
 - Combined and Multivariate Collapsing (CMC, Li and Leal, 2008) test results using `--burden cmc`
-  - Geneset : Gene being tested
+  - Geneset : Gene being tested.
   - NALT : The number of variants with alternative rare alleles in the analyzed case-control samples.
   - NSAMPLES : The number of samples with at least one alternative rare alleles in the analyzed case-control samples.
-  - CMC_P : CMC p-values
+  - CMC_P : CMC p-values.
   - ExACmissenseZ : ExAC missense z-scores as measures of the intolerance of the genes to missense changes.
   
 ## 3. VCF file of rare variants included in rare variant burden test
-##    (autosomes.RVburdenTest.vcf.gz & autosomes.RVburdenTest.vcf.gz.tbi)
+#### (autosomes.RVburdenTest.vcf.gz & autosomes.RVburdenTest.vcf.gz.tbi)
 
-- Information of columns are specified in the header <INFO= > fields
+- Information of columns are specified in the header <INFO= > fields.
 
 ## 4. Protein-truncating ultra-rare variants annotation
-##    (n4985.ProteinTruncating_URVs.annot.txt) 
+#### (n4985.ProteinTruncating_URVs.annot.txt)
+
+- Annotated using [KGGseq](http://grass.cgs.hku.hk/limx/kggseq/)
+- Reference : hg19
+  - Chromosome : Chromosome.
+  - StartPositionHg19 : Position.
+  - ReferenceAlternativeAllele : Reference/alternative alleles.
+  - rsID : DbSNP ID 138 [. : not present].
+  - MostImportantFeatureGene : Gene in which the protein-truncating variants mapped to.
+  - MostImportantGeneFeature : Function of the variants.
+  - RefGeneFeatures : Function of the variants with respect of RefSeq transcripts.
 
 
 
