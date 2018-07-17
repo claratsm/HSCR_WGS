@@ -6,3 +6,4 @@ Summary statistics for genetic analysis on HSCR WGS (Tang et al. submitted), inc
 3. VCF file of rare variants included in rare variant burden test
 4. Annotation of 4985 protein-truncating ultra-rare variants
 
+## Common variant association analysis
