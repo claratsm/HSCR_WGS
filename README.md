@@ -7,10 +7,10 @@ Summary statistics for genetic analysis on HSCR WGS (Tang et al. submitted), inc
 4. Annotation of 4985 protein-truncating ultra-rare variants
 
 ## 1. Common variant association analysis
-#### (n7224k.gwas_var-maf01.rvtests.MetaScore.SingleWald.chr*.assoc.gz)
+#### (n7224k.gwas_var-maf01.rvtests.MetaScore.SingleWald.chr*.assoc.gz[.tbi])
 
 - Performed using [rvtests](https://github.com/zhanxw/rvtests)
-- Bgzipped using [bgzip](http://www.htslib.org/doc/bgzip.html) and can be indexed using [tabix](http://www.htslib.org/doc/tabix.html)
+- Bgzipped using [bgzip](http://www.htslib.org/doc/bgzip.html) and indexed using [tabix](http://www.htslib.org/doc/tabix.html)
 - Score test results using `--meta score,cov` that could be used for meta-analysis
   - N_INFORMATIVE: Number of samples that are analyzed for association.
   - AF: Overall allele frequency. 
@@ -35,7 +35,7 @@ Summary statistics for genetic analysis on HSCR WGS (Tang et al. submitted), inc
   - ExACmissenseZ : ExAC missense z-scores as measures of the intolerance of the genes to missense changes.
   
 ## 3. VCF file of rare variants included in rare variant burden test
-#### (autosomes.RVburdenTest.vcf.gz & autosomes.RVburdenTest.vcf.gz.tbi)
+#### (autosomes.RVburdenTest.vcf.gz[.tbi])
 
 - Bgzipped using [bgzip](http://www.htslib.org/doc/bgzip.html) and indexed using [tabix](http://www.htslib.org/doc/tabix.html)
 - Information of columns are specified in the header <INFO= > fields.
