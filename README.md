@@ -38,7 +38,15 @@ Summary statistics for genetic analysis on HSCR WGS (Tang et al. submitted), inc
 #### (autosomes.RVburdenTest.vcf.gz[.tbi])
 
 - Bgzipped using [bgzip](http://www.htslib.org/doc/bgzip.html) and indexed using [tabix](http://www.htslib.org/doc/tabix.html)
-- Information of columns are specified in the header <INFO= > fields.
+- Information of columns are specified in the header <INFO= > fields, which are briefly described as follows:
+  - AC : Allele count in genotypes for each ALT allele
+  - AF : Allele Frequency for each ALT allele
+  - AN : Total number of alleles in called genotypes
+  - HSCR_AF : Allele Frequency, for each ALT allele, in the S-HSCR cases
+  - CTRL_AF : Allele Frequency, for each ALT allele, in the controls
+  - maxDBmaf : Maximum minor allele frequency (MAF) across all public databases, including 1000G, ExAC v0.2 and ESP
+  - FUNCTION : Annotated function of the variant
+  - GENE : Annotated gene for the variant
 
 ## 4. Protein-truncating ultra-rare variants annotation
 #### (n4985.ProteinTruncating_URVs.annot.txt)
